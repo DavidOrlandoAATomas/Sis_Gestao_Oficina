@@ -1,0 +1,111 @@
+📋 Descrição do Projeto
+Contexto
+O sistema foi desenvolvido para gerenciar todas as operações de uma oficina mecânica, incluindo cadastro de clientes, veículos, equipamentos, ordens de serviço, peças e controle de autorizações. O esquema relacional foi projetado para atender às necessidades de uma oficina completa.
+
+Modelo Conceitual
+O modelo inclui entidades principais como:
+
+Clientes: Informações pessoais e de contacto
+
+Veículos: Dados dos veículos e seus proprietários
+
+Mecânicos: Especialistas e suas especialidades
+
+Equipes: Grupos de trabalho organizados
+
+Ordens de Serviço: Registro dos serviços realizados
+
+Peças: Gestão de inventário e peças utilizadas
+
+Serviços: Tipos de serviços oferecidos
+
+Autorizações: Controle de aprovações dos clientes
+
+Modelo Relacional
+O esquema relacional foi implementado com as seguintes tabelas:
+
+custumer, vehicle
+
+mechanic, specialty, team
+
+service_order, service, piece
+
+authorization
+
+Tabelas de relacionamento: team_mechanic, so_service, so_piece
+
+📊 Principais Funcionalidades
+Consultas Implementadas
+Recuperações simples com SELECT
+
+Filtros com WHERE
+
+Atributos derivados com expressões
+
+Ordenações com ORDER BY
+
+Condições de filtro com HAVING e GROUP BY
+
+Junções complexas entre tabelas
+
+Exemplos de Queries
+Relatório de ordens de serviço com detalhes completos
+
+Análise financeira mensal
+
+Controle de estoque de peças
+
+Relação de mecânicos por equipe e especialidade
+
+Histórico de serviços por cliente
+
+Autorizações pendentes e aprovadas
+
+🗃️ Estrutura do Banco de Dados
+text
+oficina/
+├── custumer
+├── vehicle
+├── mechanic
+├── specialty
+├── team
+├── service_order
+├── service
+├── piece
+├── authorization
+└── Tabelas de relacionamento
+
+📈 Queries de Análise
+O projeto inclui queries analíticas para:
+
+Ticket médio por ordem de serviço
+
+Receita por período
+
+Peças mais utilizadas
+
+Serviços mais solicitados
+
+Eficiência das equipes
+
+Controle de autorizações
+
+🔧 Tecnologias Utilizadas
+MySQL
+
+Linguagem SQL
+
+Modelagem relacional
+
+Consultas complexas e otimizadas
+
+📝 Notas de Desenvolvimento
+O projeto foi desenvolvido seguindo boas práticas de modelagem de dados, com:
+
+Chaves primárias e estrangeiras adequadas
+
+Constraints de integridade referencial
+
+Índices para melhoria de performance
+
+Normalização até a 3ª Forma Normal
